@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    {"name": "reachable", "type": "boolean", "required": true},
+    {"name": "status_code", "type": "integer", "required": false},
+    {"name": "expected_status", "type": "integer", "required": false},
+    {"name": "consecutive_failures", "type": "integer", "required": false},
+    {"name": "currently_down", "type": "boolean", "required": false}
+  ],
+  "outputs": [
+    {"name": "healthy", "type": "boolean"},
+    {"name": "consecutive_failures", "type": "integer"},
+    {"name": "currently_down", "type": "boolean"},
+    {"name": "transition", "type": "string"},
+    {"name": "layer", "type": "string"},
+    {"name": "label", "type": "string"},
+    {"name": "advice", "type": "string"}
+  ]
+}

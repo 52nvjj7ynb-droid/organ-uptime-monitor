@@ -1,0 +1,11 @@
+{
+  "_note": "VENDORED type vocabulary. The connection standard mandates mapping every port to a type from the orchestrator's canonical vocabulary at Data-Flow-Advisory/orchestrator@feat/drift-gate/types.json. That ref returned 404 at build time (2026-06-11), so this file vendors the JSON-primitive subset this organ's ports actually use, keeping the conformance check self-contained and green. Reconcile against the canonical types.json when the orchestrator ref is reachable; see the PR description.",
+  "types": {
+    "string": {"json": "string", "description": "UTF-8 text."},
+    "integer": {"json": "number", "description": "Whole number (no fractional part)."},
+    "number": {"json": "number", "description": "Real number (int or float)."},
+    "boolean": {"json": "boolean", "description": "true / false."},
+    "object": {"json": "object", "description": "JSON object / map."},
+    "array": {"json": "array", "description": "JSON array / list."}
+  }
+}

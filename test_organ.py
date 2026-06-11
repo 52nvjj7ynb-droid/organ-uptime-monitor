@@ -185,3 +185,11 @@ def test_cli_runs_on_samples():
         assert proc.returncode == 0, proc.stderr
         parsed = json.loads(proc.stdout)
         assert set(parsed) == {"output", "rationale", "self_metric"}
+
+
+def test_ports_conformance_passes():
+    proc = subprocess.run(
+        [sys.executable, os.path.join(HERE, "check_ports.py")],
+        capture_output=True, text=True,
+    )
+    assert proc.returncode == 0, proc.stderr + proc.stdout
