@@ -1,0 +1,9 @@
+{
+  "state": {
+    "reachable": false,
+    "status_code": null,
+    "expected_status": 200,
+    "consecutive_failures": 0,
+    "currently_down": false
+  }
+}

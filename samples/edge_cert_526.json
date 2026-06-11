@@ -1,0 +1,9 @@
+{
+  "state": {
+    "reachable": true,
+    "status_code": 526,
+    "expected_status": 200,
+    "consecutive_failures": 0,
+    "currently_down": false
+  }
+}
